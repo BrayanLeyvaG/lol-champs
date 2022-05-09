@@ -11,7 +11,7 @@ function App() {
   const [champList, setchampList] = useState([])
 
   const getData = async () => {
-    await axios.get('http://ddragon.leagueoflegends.com/cdn/12.8.1/data/en_US/champion.json')
+    await axios.get('https://ddragon.leagueoflegends.com/cdn/12.8.1/data/en_US/champion.json')
       .then((res) => {
         const data = res.data.data
         setchampList(data)
